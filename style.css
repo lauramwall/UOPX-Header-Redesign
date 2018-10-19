@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    color: #3E2F2C;
+}
+
+.header {
+    background-color: #FFF;
+}
+
+img {
+    position: absolute;
+}
+
+ul {
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    display: inline-flex;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+li {
+    float: left;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.header_buttons {
+    float: right;
+    margin-top: 2.4rem;
+}
+
+.button1 {
+    display: inline-flex;
+    background-color: #F5F5F5;
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border-radius: 4px;
+    border: none;
+    transition: 0.5s;
+}
+
+.button1 a {
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: rgb(222, 53, 24);
+}
+
+.button1:hover {
+    opacity: .8;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button2 {
+    display: inline-flex;
+    background-color: rgb(222, 53, 24);
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border-radius: 4px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.button2 a {
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #F5F5F5;
+}
+
+.button2:hover {
+    opacity: .8;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button3 {
+    display: inline-flex;
+    background-color: rgb(222, 53, 24);
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border-radius: 4px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #F5F5F5!important;
+    margin-left: 18px;
+    width: 170px;
+    text-align: center;
+}
+
+.button3:hover {
+    opacity: .8;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(222, 53, 24)!important;
+}
+
+.button3 .button_padding {
+    padding-left: 25px;
+}
+
+/* Top Nav */
+
+.top_nav {
+  float: right;
+  position: fixed;
+  right: 22px;
+}
+
+.top_nav a {
+  text-decoration: none;
+  color: #222;
+  font-size: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Dropdown Menu */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #3E2F2C;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: inherit;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    margin-left: 20px;
+    padding-bottom: 18px;
+    padding-top: 15px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    border-bottom: 3px solid rgb(222, 53, 24);
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    border-top: 1px solid lightgrey;
+    z-index: 1;
+}
+
+.dropdown-content .header {
+    background: #FFF;
+    padding: 16px;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #FFF;
+    height: 350px;
+}
+
+.column h3 {
+    padding-left: 16px;
+}
+
+.column a {
+    float: none;
+    color: #384f61;
+    padding-left: 16px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    background-color: #FFF;
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Mobile Nav */
+
+.mobile_nav .dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.mobile_icon {
+    float: right;
+    display: inline-block;
+}
+
+.mobile_icon:hover .mobile_nav .dropdown .dropdown-content {
+    display: block;
+}
+
+.mobile_nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Create three equal columns that floats next to each other */
+.mobile_nav .column {
+    float: left;
+    width: 100%;
+    padding: 12px;
+    background-color: #FFF;
+    height: 45px;
+    border-top: 1px solid lightgrey;
+}
+
+.mobile_nav .column h3 {
+    padding-left: 16px;
+}
+
+.mobile_nav .column a {
+    float: none;
+    color: #3E2F2C;
+    padding-left: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.mobile_nav .column a:hover {
+    background-color: #FFF;
+    color: #000;
+    text-decoration: underline;
+}
+
+.mobile_nav .special_column {
+    float: left;
+    width: 100%;
+    padding: 12px;
+    background-color: #FFF;
+    height: 140px;
+    border-top: 1px solid lightgrey;
+}
+
+.mobile_nav .special_column h3 {
+    padding-left: 16px;
+}
+
+.mobile_nav .special_column a {
+    float: none;
+    color: #3E2F2C;
+    padding-left: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.mobile_nav .special_column a:hover {
+    background-color: #FFF;
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Clear floats after the columns */
+.mobile_nav .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Hamburger Button */
+
+i {
+  font-size: 22px;
+  color: #000;
+  padding-top: 5px;
+}
+
+#background {
+  height: 800px;
+  background-image: url(img/bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: static;
+}
+
+/* Responsive Layout */
+
+@media screen and (max-width: 768px) {
+    .button1 {
+        display: none;
+    }
+  }
+
+@media screen and (max-width: 630px) {
+      .dropdown .dropbtn {
+          display: none;
+      }
+      .header {
+        height: 93px;
+      }
+      .header_buttons .button2 {
+        float: left;
+        display: block;
+      }
+    }
+
+@media screen and (min-width: 630px) {
+    .header_buttons i {
+            display: none;
+    }
+  }
