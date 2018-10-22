@@ -123,8 +123,9 @@ li {
   text-decoration: none;
   color: #222;
   font-size: 12px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 11px;
+  padding-left: 11px;
+  border-right: 1px solid lightgrey;
 }
 
 /* Dropdown Menu */
